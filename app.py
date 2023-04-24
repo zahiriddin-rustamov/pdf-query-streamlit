@@ -35,7 +35,7 @@ with st.sidebar:
         embeddings = OpenAIEmbeddings()
         chain = load_qa_chain(OpenAI(), chain_type="stuff")
     except:
-        st.error("Please enter OpenAI Key")
+        st.warning("[Please enter OpenAI Key](https://platform.openai.com/account/api-keys)")
     
     #st.header("Model")
     #model = st.selectbox("Select model", ["text-davinci-003", "google"])
